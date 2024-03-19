@@ -7,6 +7,20 @@
   </head>
   <body>
     <h1>Hello world</h1>
+    <h2>Function adding maximum</h2>
+    <h2>FizzBuzz problem</h2>
+
+    <script>
+      let nber1 = prompt("Enter the first number");
+      let nber2 = prompt("Enter the second number");
+      alert("The maximum number is " + max(nber1, nber2));
+
+      function max(a, b) {
+        if (a > b) return a;
+        else if (a < b) return b;
+        else return "equals numbers";
+      }
+    </script>
     <script src="index.js"></script>
   </body>
 </html>

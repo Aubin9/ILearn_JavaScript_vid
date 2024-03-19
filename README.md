@@ -21,3 +21,9 @@
 -Comparison operators: > < >= <= === == !==
 -Bitwise operators: |(ORing) &(ANDing) in hexadecimal system
 -Ternary operator
+
+## Control flow
+
+-Conditional statements: If...else switch...case
+-Loops: for, while, Do...while, for...in, for...of
+-break; continue;
