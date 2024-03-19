@@ -24,3 +24,8 @@ function greet(name) {
   console.log("Hello " + name);
 }
 greet(person.name);
+
+//Ternary operator
+let myAge = 18;
+let adult = myAge < 18 ? "you are not major" : "you are major";
+console.log(adult);
