@@ -136,3 +136,105 @@ function stars(nber) {
   }
 }
 stars(2);
+
+// Objects
+// OOP
+const circle = {
+  radius: 1,
+  location: {
+    x: 1,
+    y: 2,
+  },
+  isVisible: true,
+  draw: function () {
+    console.log("draw");
+  },
+};
+
+circle.draw();
+
+// Factory functions
+function createCircle(radius, visible) {
+  return {
+    radius: radius,
+    location: {
+      x: 1,
+      y: 2,
+    },
+    isVisible: visible,
+    draw() {
+      console.log("draw");
+    },
+  };
+}
+
+// Constructor function
+function Circle(radius) {
+  this.radius = radius;
+  this.draw = function () {
+    console.log("draw");
+  };
+}
+const Circle1 = new Circle(1);
+// dynamic
+const square = {
+  radius: 1,
+};
+square.color = "yellow";
+square.draw = function () {};
+delete square.color;
+
+// Constructors properties
+// let x=new Object();
+new String();
+new Boolean();
+new Number();
+
+const msg = "This is my first message";
+msg.indexOf("my");
+msg.length;
+msg[0];
+msg.includes("my");
+msg.includes("not");
+msg.startsWith("This");
+msg.endsWith("e");
+msg.replace("first", "second");
+msg.toUpperCase();
+msg.toLocaleLowerCase();
+msg.trim(); //remove the spaces before and after a text
+msg.trimLeft();
+
+// Date
+const date_now = new Date();
+console.log(date_now); //Search for JavaScript Date
+
+// Clonning an object
+
+const circle1 = {
+  radius: 1,
+  location: {
+    x: 1,
+    y: 2,
+  },
+  isVisible: true,
+  draw: function () {
+    console.log("draw");
+  },
+};
+
+const another = { ...circle1 }; //spread operators
+
+// Exercise
+let post = {
+  title: "the title",
+  body: "write the plain text of your body here",
+  author: "James Smith",
+  views: 29389,
+  comments: [
+    { author: "Papi", body: "Body comment" },
+    { author: "Papi", body: "Body comment" },
+    { author: "Papi", body: "Body comment" },
+  ],
+  isLive: true,
+};
+console.log(post);

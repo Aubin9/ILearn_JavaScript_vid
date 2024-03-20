@@ -27,3 +27,15 @@
 -Conditional statements: If...else switch...case
 -Loops: for, while, Do...while, for...in, for...of
 -break; continue;
+
+## Objects
+
+-Factory functions
+-Constructor function
+-Dynamic nature of Objects
+-Constructor property
+-Functions are objects
+-Math method
+-Template litterals: backticks
+-Date
+-Clonning an object
