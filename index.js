@@ -238,3 +238,100 @@ let post = {
   isLive: true,
 };
 console.log(post);
+
+// ARRAYS
+let numbers = [3, 4];
+numbers.push(5, 6); //add to the end of the array
+console.log(numbers);
+
+numbers.unshift(1, 2); //add to the beginning of the array
+console.log(numbers);
+
+numbers.splice(2, 0, "a", "b"); //add at the middle of the array
+console.log(numbers);
+
+// Finding elements (primitives)
+numbers.indexOf("a");
+numbers.lastIndexOf(2);
+console.log(numbers.indexOf(1) !== -1); //return true => number exist
+numbers.includes(1);
+// find(); findIndex();
+
+// Arrow functions
+
+// remove elements in an array
+numbers.pop(); // remove the last element in an array
+numbers.shift(); //remove the first element in an array
+numbers.splice(2, 3); // remove 3 element from index 2
+
+// emptying an array
+numbers = []; //solution 1
+numbers.length = 0; //solution 2: preffered
+numbers.splice(0, numbers.length); //solution 3
+
+// Combining arrays
+const first = [1, 2, 3];
+const second = [4, 5, 6];
+
+const combined = first.concat(second);
+
+// spread operator
+const spread = [...first, ...second, , 7, 8]; //you can add other elements e.g 7, 8
+
+// forEach method
+numbers.forEach((element) => {
+  console.log(element);
+});
+// or
+numbers.forEach((number, index) => console.log(number + " " + index));
+
+// Join method
+const joined = numbers.join(",");
+
+const msg2 = "This is my second message";
+const parts = msg2.split(" ");
+const combined2 = parts.join("-");
+
+// Sorts elements
+numbers.sort();
+numbers.reverse();
+
+// filter
+
+numbers.filter(function (value) {
+  return value >= 0;
+});
+// Or
+const filtered = numbers.filter((n) => n >= 0);
+
+// Mapping an array
+const items = filtered.map((n) => "<li>" + n + "</li>");
+
+// Exercise 1
+function arrayFromRange(min, max) {
+  let arr = [];
+  for (let i = min; i <= max; i++) arr.push(i);
+  return arr;
+}
+console.log(arrayFromRange(1, 6));
+
+// Exercise 2: implement the include function
+function includes(array, searchElement) {
+  let find = false;
+  array.forEach((element) => {
+    if (element === searchElement) find = true;
+  });
+  return find;
+}
+const nbrs = [1, 2, 3, 4];
+console.log(includes(nbrs, 2));
+
+// Exercise 3
+function except(array, excluded) {
+  const op = [];
+  for (let element of array) {
+    if (!excluded.includes(element)) op.push(element);
+  }
+  return op;
+}
+console.log(except(nbrs, [2]));

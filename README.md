@@ -39,3 +39,18 @@
 -Template litterals: backticks
 -Date
 -Clonning an object
+
+## Arrays
+
+-Adding new elements
+-Finding elements
+-Removing elements
+-Splitting arrays
+-Combining arrays
+-Arrow function
+-Spread operator
+-forEach() method
+-join() method
+-sort arrays
+-Filter array
+-Mapping an array
