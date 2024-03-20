@@ -54,3 +54,11 @@
 -sort arrays
 -Filter array
 -Mapping an array
+
+## Functions
+
+-Default parameters
+-Getters and setters
+-try and catch
+-Local vs Global scope
+-let vs var

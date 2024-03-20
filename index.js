@@ -335,3 +335,73 @@ function except(array, excluded) {
   return op;
 }
 console.log(except(nbrs, [2]));
+
+// FUNCTIONS
+
+// default parameters
+function interest(principal, rate, years) {
+  rate = rate || 3.5;
+  years = years || 5;
+  return ((principal * rate) / 100) * years;
+}
+console.log(interest(10000));
+// or
+function interest(principal, rate = 3.5, years = 5) {
+  return ((principal * rate) / 100) * years;
+}
+console.log(interest(10000));
+
+// Getters and setters
+
+const person2 = {
+  firstName: "Aubin",
+  lastName: "SIAHA",
+  fullName() {
+    return `${person2.firstName} ${person2.lastName}`;
+  },
+};
+console.log(person.fullName()); //But it is read only !!
+// getters => access properties
+// setters => change (mutate) them
+
+const person3 = {
+  firstName: "John",
+  lastName: "Smith",
+  get fullName() {
+    return `${person2.firstName} ${person2.lastName}`;
+  },
+  set fullName(value) {
+    const parts = value.split(" ");
+    this.firstName = parts[0];
+    this.lastName = parts[1];
+  },
+};
+
+person3.fullName = "Aubin SIAHA";
+
+// try and catch
+const person4 = {
+  firstName: "John",
+  lastName: "Smith",
+  get fullName() {
+    return `${person2.firstName} ${person2.lastName}`;
+  },
+  set fullName(value) {
+    if (typeof value !== "string") throw new Error("Value is not a string");
+
+    const parts = value.split(" ");
+    if (parts.length !== 2) throw new Error("Enter the first and last name");
+    this.firstName = parts[0];
+    this.lastName = parts[1];
+  },
+};
+try {
+  person4.fullName = null;
+} catch (e) {
+  // console.log(e);
+  alert(e);
+}
+console.log(person4);
+
+// var => create function-scoped variables
+// let, const => create block-scoped variables/constants
