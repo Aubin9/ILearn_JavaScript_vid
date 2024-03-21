@@ -55,6 +55,8 @@
 -Filter array
 -Mapping an array
 
+# Part 2
+
 ## Functions
 
 -Default parameters
@@ -62,3 +64,21 @@
 -try and catch
 -Local vs Global scope
 -let vs var
+
+## Understand OOP(objects & functions) VS Procedural Programming(functions)
+
+-4 PILLARS
+
+### Encapsulation: Reduce complexity + increase reusability
+
+e.g.:Car -> properties: make, model, color && methods: start(), stop(), and move()
+
+### Abstraction: Reduce complexity + isolate impact of changes
+
+a car, you don't see engine, motor, etc. u don't hv 2 knw hw it works b4 drive
+
+### Inheritance: Eliminate redundant code
+
+allow u to eliminate redondant codes. dog, cat, mouse inherit from animal
+
+### Polymorphism: Refactor ugly switch/case statements
