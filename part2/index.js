@@ -140,3 +140,5 @@ const sw = new Stopwatch();
 // sw.stop();
 // sw.reset();
 // sw.duration;
+
+// INHERITANCE: circle, scare, etc. inherit shape abject -> prototype(shape). Prototype=parent element

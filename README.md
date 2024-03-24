@@ -80,5 +80,8 @@ a car, you don't see engine, motor, etc. u don't hv 2 knw hw it works b4 drive
 ### Inheritance: Eliminate redundant code
 
 allow u to eliminate redondant codes. dog, cat, mouse inherit from animal
+-Classical vs Prototypical inheritance
+Prototype => parent
+e.g.: circle, scare, etc. inherit shape abject
 
 ### Polymorphism: Refactor ugly switch/case statements
